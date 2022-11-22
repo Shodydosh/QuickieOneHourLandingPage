@@ -1,79 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-/* import font chữ */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* chiều rộng và chiều cao bao gồm nội dung, padding và border */
     font-family: 'Poppins', sans-serif;
-    /* thêm font  */
-    transition: all 0.4s ease;
-    /* hiệu ứng để mượt hơn  */
+    transition: all 0.4s ease;;
 }
 
 body{
     height: 100vh;
-    /* chiều cao là cả trang web  */
     background-image: url("./bg.jpg");
-    /* set nền */
+    /* background-color: #FFFFFA; */
 }
 
 /*! NAV */
 
 
-nav{
-    position: fixed; /* giu nguyen vi tri */
+#nav {
+    position: fixed;
     top: 0;
     left: 0;
     height: 80px;
-    /* chieu cao 80px */
     width: 100%;
-    /* chieu rong 100% so voi the cha */
     background-color: black;
 }
 
-nav .nav-bar{
+#nav .nav-bar{
     position: relative;
-    /* Vị trí mới của một element tương quan/ liên hệ tới vị trí mặc định của nó */
     height: 100%;
-    /* chieu cao 100% so voi the cha */
     width: 100%;
-    /* chieu rong 100% so voi the cha */
     background-color: black;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
-    /* các thành phần trên trang web sẽ được cân đối khoảng cách và vị trí tự động mà không cần quy định kích thước. */
     align-items: center;
     justify-content: space-between;
-    /* căn giữa  */
 }
 
-nav .nav-bar .name a{
+#nav .nav-bar .name a{
     font-size: 25px;
     font-weight: 500;
     color: #FFF;
     text-decoration: none;
-    /* hiệu ứng chữ: không có*/
 }
 
 .nav-bar .nav-links{
     display: flex;
-    /* các thành phần trên trang web sẽ được cân đối khoảng cách và vị trí tự động mà không cần quy định kích thước. */
     align-items: center;
-    /* căn giữa  */
 }
 
 .nav-bar .nav-links li{
     margin: 0 5px;
     list-style: none;
-    /* hiệu ứng list: không  */
 }
 
 .nav-links li a{
     position: relative;
-    /* Vị trí mới của một element tương quan/ liên hệ tới vị trí mặc định của nó */
     font-size: 15px;
     font-weight: 400;
     color: #FFF;
@@ -86,7 +69,6 @@ nav .nav-bar .name a{
     font-weight: 500;
     background-color: #ECEC7E;
     border-radius: 4px;
-    /* bo tròn góc  */
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -100,13 +82,11 @@ nav .nav-bar .name a{
     padding: 50px;
     width: 100%;
     display: flex;
-    /* các thành phần trên trang web sẽ được cân đối khoảng cách và vị trí tự động mà không cần quy định kích thước. */
 }
 
 /*? FIRST DIV  */
 .upper{
     display: flex;
-    /* các thành phần trên trang web sẽ được cân đối khoảng cách và vị trí tự động mà không cần quy định kích thước. */
 }
 
 .star {
@@ -129,17 +109,18 @@ h1 {
 
 .divBtn {
     margin-top: 50px;
+    display: flex;
 }
 
-.divButton {
+.divButton1, .divButton2 {
     border: 0;
     color: black;
     font-weight: 500;
     background-color: #ECEC7E;
     border-radius: 4px;
-    /* bo tròn góc  */
-    padding: 1.5rem 8rem;
-    /* padding  */
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    margin-left: 0;
     cursor: pointer;
 }
 
@@ -152,11 +133,8 @@ h1 {
 /*? SECOND DIV  */
 .secondDiv {
     display: flex;
-    /* các thành phần trên trang web sẽ được cân đối khoảng cách và vị trí tự động mà không cần quy định kích thước. */
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    /* căn giữa  */
-
     width: 60%;
 }
 .mainImg{
